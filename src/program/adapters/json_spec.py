@@ -15,7 +15,19 @@ class JsonSpecSource:
 				data = json.loads(self._path.read_text())
 			except FileNotFoundError as e:
 				raise SpecSourceError(f"spec sidecar not found: {self._path}") from e
-			self._index = {s["id"]: s for s in data["specs"]}
+
+			index: dict[str, dict[str, str]] = {}
+			dupes: set[str] = set()
+			for s in data.get("specs", []):
+				spec_id = s.get("id")
+				if not isinstance(spec_id, str):
+					continue
+				if spec_id in index:
+					dupes.add(spec_id)
+				index[spec_id] = s
+			if dupes:
+				raise SpecSourceError(f"duplicate spec ids in sidecar: {sorted(dupes)}")
+			self._index = index
 		return self._index
 
 	def get(self, spec_id: str) -> dict[str, str] | None:
