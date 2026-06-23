@@ -21,5 +21,5 @@ def health() -> HealthResult:
 
 
 @app.get("/program", status_code=status.HTTP_200_OK)
-async def test_program(date: Annotated[str, Query()] = "today") -> Program:
+def program(date: Annotated[str, Query()] = "today") -> Program:
 	return handle_read_program(ReadProgramInput(date=date))
