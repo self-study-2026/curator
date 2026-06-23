@@ -26,5 +26,8 @@ htmlcov/
 # macOS
 .DS_Store
 
+# IDE
+.vscode/
+
 # Environment
 .env

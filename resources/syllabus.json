@@ -1,0 +1,731 @@
+{
+ "generated": "2026-06-18",
+ "note": "calendars consolidated into program-calendar.ics",
+ "specs": [
+  {
+   "id": "INFRASTRUCTURE",
+   "file": "INFRASTRUCTURE-2026.md",
+   "title": "Infrastructure Addendum \u2014 Synology, Local LLM, and Dev Environment Reasoning"
+  },
+  {
+   "id": "README",
+   "file": "README.md",
+   "title": "Syllabus Spec Pack: Mid-to-Staff (2026\u20132027)"
+  },
+  {
+   "id": "KATA",
+   "file": "katas/KATA-GRADER.md",
+   "title": "Kata Grader: GradeKataSolution (a Curator tool)"
+  },
+  {
+   "id": "README",
+   "file": "katas/README.md",
+   "title": "TDD Kata Library"
+  },
+  {
+   "id": "tier1-fluency",
+   "file": "katas/tier1-fluency.md",
+   "title": "Tier 1: Fluency Katas"
+  },
+  {
+   "id": "tier2-design",
+   "file": "katas/tier2-design.md",
+   "title": "Tier 2: Design Katas"
+  },
+  {
+   "id": "tier3-domain",
+   "file": "katas/tier3-domain.md",
+   "title": "Tier 3: Domain + State Katas"
+  },
+  {
+   "id": "tier4-data-structures",
+   "file": "katas/tier4-data-structures.md",
+   "title": "Tier 4: Data Structure Katas"
+  },
+  {
+   "id": "README",
+   "file": "extensions/README.md",
+   "title": "Extensions: The No-Time-Limit Tier"
+  },
+  {
+   "id": "XC1",
+   "file": "extensions/XC1-conference-talk.md",
+   "title": "XC1: The Conference Talk"
+  },
+  {
+   "id": "XC2",
+   "file": "extensions/XC2-security-module.md",
+   "title": "XC2: Security as a Real Module"
+  },
+  {
+   "id": "XC3",
+   "file": "extensions/XC3-oss-maintainership.md",
+   "title": "XC3: OSS Maintainership"
+  },
+  {
+   "id": "XD1",
+   "file": "extensions/XD1-toy-storage-engine.md",
+   "title": "XD1: Toy Storage Engine: LSM Tree + WAL"
+  },
+  {
+   "id": "XD2",
+   "file": "extensions/XD2-queueing-theory.md",
+   "title": "XD2: Queueing Theory for the Capacity Model"
+  },
+  {
+   "id": "XD3",
+   "file": "extensions/XD3-formal-methods-tla.md",
+   "title": "XD3: Formal Methods, Small Dose: TLA+ on the Saga"
+  },
+  {
+   "id": "XD4",
+   "file": "extensions/XD4-property-based-testing.md",
+   "title": "XD4: Property-Based Testing the Invariants"
+  },
+  {
+   "id": "XD5",
+   "file": "extensions/XD5-streaming-queue-to-log.md",
+   "title": "XD5: Streaming for Real: From Queue to Log"
+  },
+  {
+   "id": "XF1",
+   "file": "extensions/XF1-networking-first-principles.md",
+   "title": "XF1: Networking from First Principles"
+  },
+  {
+   "id": "XF2",
+   "file": "extensions/XF2-os-internals-container.md",
+   "title": "XF2: OS Internals: Build a Container from Scratch"
+  },
+  {
+   "id": "XF3",
+   "file": "extensions/XF3-performance-engineering.md",
+   "title": "XF3: Performance Engineering as a Craft"
+  },
+  {
+   "id": "XW1",
+   "file": "extensions/XW1-lab-domain-literacy.md",
+   "title": "XW1: Lab-Domain Literacy for the Platform Engineer"
+  },
+  {
+   "id": "P1",
+   "file": "platform/P1-postgres-performance-lab.md",
+   "title": "P1: Postgres Performance Lab on the Curator"
+  },
+  {
+   "id": "P2",
+   "file": "platform/P2-load-test-capacity.md",
+   "title": "P2: Load Test and Capacity Model"
+  },
+  {
+   "id": "P3",
+   "file": "platform/P3-api-contract-evolution.md",
+   "title": "P3: API Contract Evolution (Breaking Change, Versioning, Sunset)"
+  },
+  {
+   "id": "P4",
+   "file": "platform/P4-game-day-postmortem.md",
+   "title": "P4: Game Day and Blameless Postmortem"
+  },
+  {
+   "id": "P5",
+   "file": "platform/P5-program-ownership-now.md",
+   "title": "P5: Program Ownership: Completion Tracking, the Served Calendar, and /now"
+  },
+  {
+   "id": "README",
+   "file": "platform/README.md",
+   "title": "Platform Hardening: Four Medium Assignments"
+  },
+  {
+   "id": "M0",
+   "file": "capstones/M0-launch.md",
+   "title": "Capstone M0 \u2014 Public Identity Shipped"
+  },
+  {
+   "id": "M1",
+   "file": "capstones/M1-launch.md",
+   "title": "Capstone M1 \u2014 Curator v1 with Anthropic Patterns"
+  },
+  {
+   "id": "M10",
+   "file": "capstones/M10-launch.md",
+   "title": "Capstone M10 \u2014 The Curator: Public Launch"
+  },
+  {
+   "id": "M2",
+   "file": "capstones/M2-launch.md",
+   "title": "Capstone M2 \u2014 Curator v2 in DDD Form"
+  },
+  {
+   "id": "M3",
+   "file": "capstones/M3-launch.md",
+   "title": "Capstone M3 \u2014 Eval Harness Walkthrough (Public Loom)"
+  },
+  {
+   "id": "M4",
+   "file": "capstones/M4-launch.md",
+   "title": "Capstone M4 \u2014 CLAUDE.md v2 + Slash Commands + Handoff Doc"
+  },
+  {
+   "id": "M5",
+   "file": "capstones/M5-launch.md",
+   "title": "Capstone M5 \u2014 curator-mcp-tools Public Repo + SECURITY.md + Screencast"
+  },
+  {
+   "id": "M6",
+   "file": "capstones/M6-launch.md",
+   "title": "Capstone M6 \u2014 Curator + Site Fully Terraform-Managed; Public Dashboard"
+  },
+  {
+   "id": "M7",
+   "file": "capstones/M7-launch.md",
+   "title": "Capstone M7 \u2014 Raft + Curator v4 with a Distributed Component"
+  },
+  {
+   "id": "M8",
+   "file": "capstones/M8-launch.md",
+   "title": "Capstone M8 \u2014 Reverse-Engineering Write-Up (Public)"
+  },
+  {
+   "id": "M9",
+   "file": "capstones/M9-launch.md",
+   "title": "Capstone M9 \u2014 Working jlox + Reviewed Engineering Strategy Doc"
+  },
+  {
+   "id": "CB-B1",
+   "file": "combined-block/CB-B1-bounded-contexts-microservices.md",
+   "title": "CB-B1: \"Bounded Contexts Are Where Your Service Boundaries Belong\""
+  },
+  {
+   "id": "CB-B2",
+   "file": "combined-block/CB-B2-split-monolith.md",
+   "title": "CB-B2: \"I Split a Service Along Its Bounded Contexts: What Broke and What Didn't\""
+  },
+  {
+   "id": "CB-KATA",
+   "file": "combined-block/CB-KATA-distributed-patterns.md",
+   "title": "CB-KATA: Distributed Systems / Microservices Pattern Kata"
+  },
+  {
+   "id": "CB1",
+   "file": "combined-block/CB1-extract-microservice.md",
+   "title": "CB1: Extract a Bounded Context into a Microservice"
+  },
+  {
+   "id": "CB2",
+   "file": "combined-block/CB2-saga-across-services.md",
+   "title": "CB2: Saga Across Services (Compensation + Outbox)"
+  },
+  {
+   "id": "CB3",
+   "file": "combined-block/CB3-split-monolith.md",
+   "title": "CB3: Split a Monolith Along Its Seams (Strangler Fig)"
+  },
+  {
+   "id": "README",
+   "file": "combined-block/README.md",
+   "title": "Combined Block: Domain-Driven Design + Distributed Systems & Microservices"
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DC1.md",
+   "title": "B-DC1 \u2014 \"Deep Modules vs Small Objects: Ousterhout vs Metz\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DC2.md",
+   "title": "B-DC2 \u2014 \"Characterization Tests: Changing Code You Do Not Understand\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DC3.md",
+   "title": "B-DC3 \u2014 \"The Smell Is Not the Problem\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DC4.md",
+   "title": "B-DC4 \u2014 \"Complexity Is the Only Enemy\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DC5.md",
+   "title": "B-DC5 \u2014 \"Refactoring Under Green: the Discipline, Not the Catalog\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DD1.md",
+   "title": "B-DD1 \u2014 \"Storage Engines, From the Inside\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DD2.md",
+   "title": "B-DD2 \u2014 \"There Are No Solutions, Only Trade-offs\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DD3.md",
+   "title": "B-DD3 \u2014 \"What 'Consistency' Actually Means\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DD4.md",
+   "title": "B-DD4 \u2014 \"The Log Is the Truth\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-DD5.md",
+   "title": "B-DD5 \u2014 \"Replication and the Lies We Tell About It\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-KB1.md",
+   "title": "B-KB1 \u2014 \"What TDD by Example Actually Teaches (It Is Not Testing)\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-KB2.md",
+   "title": "B-KB2 \u2014 \"Tidy First? The Economics of When to Clean\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-KB3.md",
+   "title": "B-KB3 \u2014 \"XP's Values, Twenty Years On\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-KB4.md",
+   "title": "B-KB4 \u2014 \"Small Steps vs Large: the TDD Gear Shift\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-KB5.md",
+   "title": "B-KB5 \u2014 \"Building xUnit Test-First\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-SM1.md",
+   "title": "B-SM1 \u2014 \"Single Responsibility, Reconsidered\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-SM2.md",
+   "title": "B-SM2 \u2014 \"Duck Typing and the Death of the Type Check\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-SM3.md",
+   "title": "B-SM3 \u2014 \"Inheritance vs Composition: the Decision, Made Out Loud\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-SM4.md",
+   "title": "B-SM4 \u2014 \"Shameless Green: In Praise of Writing the Dumb Version First\""
+  },
+  {
+   "id": "B",
+   "file": "blog/B-SM5.md",
+   "title": "B-SM5 \u2014 \"Replacing Conditionals with Objects\""
+  },
+  {
+   "id": "B0",
+   "file": "blog/B0.md",
+   "title": "B0 \u2014 \"What I'm Studying for the Next Twelve Months and Why\""
+  },
+  {
+   "id": "B1.1",
+   "file": "blog/B1.1.md",
+   "title": "B1.1 \u2014 \"Workflows or Agents? A Decision Framework I Wish I'd Had Six Months Ago\""
+  },
+  {
+   "id": "B1.2",
+   "file": "blog/B1.2.md",
+   "title": "B1.2 \u2014 \"What Building My Study Assistant Taught Me About Agent Patterns\""
+  },
+  {
+   "id": "B10.1",
+   "file": "blog/B10.1.md",
+   "title": "B10.1 \u2014 \"The Curator: Twelve Months From Mid-Level to This\""
+  },
+  {
+   "id": "B10.2",
+   "file": "blog/B10.2.md",
+   "title": "B10.2 \u2014 \"What Twelve Months of Structured Self-Study Taught Me\""
+  },
+  {
+   "id": "B2.1",
+   "file": "blog/B2.1.md",
+   "title": "B2.1 \u2014 \"Bounded Contexts Are the Best Idea in Software Architecture, and Now LLMs Make Them Necessary\""
+  },
+  {
+   "id": "B2.2",
+   "file": "blog/B2.2.md",
+   "title": "B2.2 \u2014 \"I Event-Stormed My Own Study Assistant. Here's What Surprised Me.\""
+  },
+  {
+   "id": "B3.1",
+   "file": "blog/B3.1.md",
+   "title": "B3.1 \u2014 \"I Spent a Week Looking at LLM Traces by Hand. Here's What I Found.\""
+  },
+  {
+   "id": "B3.2",
+   "file": "blog/B3.2.md",
+   "title": "B3.2 \u2014 \"Hybrid Search Beat My Vector DB by 23%. The Boring Lesson Nobody Wants to Hear.\""
+  },
+  {
+   "id": "B4.1",
+   "file": "blog/B4.1.md",
+   "title": "B4.1 \u2014 \"Spec-Driven Development Isn't Waterfall. It's How You Tell Claude What You Actually Want.\""
+  },
+  {
+   "id": "B4.2",
+   "file": "blog/B4.2.md",
+   "title": "B4.2 \u2014 \"My CLAUDE.md, Annotated\""
+  },
+  {
+   "id": "B5.1",
+   "file": "blog/B5.1.md",
+   "title": "B5.1 \u2014 \"MCP Is the USB-C of AI Agents \u2014 and the Wiring Behind That Analogy Matters\""
+  },
+  {
+   "id": "B5.2",
+   "file": "blog/B5.2.md",
+   "title": "B5.2 \u2014 \"Code Mode Cut My Token Usage in Half. Should You Do It?\""
+  },
+  {
+   "id": "B6.1",
+   "file": "blog/B6.1.md",
+   "title": "B6.1 \u2014 \"Why I Moved My Side Project to Terraform on a Saturday\""
+  },
+  {
+   "id": "B7.1",
+   "file": "blog/B7.1.md",
+   "title": "B7.1 \u2014 \"What Implementing Raft Taught Me About Production Incidents\""
+  },
+  {
+   "id": "B7.2",
+   "file": "blog/B7.2.md",
+   "title": "B7.2 \u2014 \"DDIA Is a Decade Old and Still the Right Answer\""
+  },
+  {
+   "id": "B8.1",
+   "file": "blog/B8.1.md",
+   "title": "B8.1 \u2014 \"Reverse Engineering with Claude: The 6-Weeks-to-2-Weeks Claim, Tested\""
+  },
+  {
+   "id": "B8.2",
+   "file": "blog/B8.2.md",
+   "title": "B8.2 \u2014 \"My Own Code Is Brownfield Now\""
+  },
+  {
+   "id": "B9.1",
+   "file": "blog/B9.1.md",
+   "title": "B9.1 \u2014 \"What Writing a Tiny Interpreter Taught Me About LLMs\""
+  },
+  {
+   "id": "B9.2",
+   "file": "blog/B9.2.md",
+   "title": "B9.2 \u2014 \"The Staff Engineer's Job Is Verification, Not Generation\""
+  },
+  {
+   "id": "A8.1",
+   "file": "m8/A8.1-kg-over-codebase.md",
+   "title": "A8.1: Knowledge-Graph-Over-Codebase Prototype"
+  },
+  {
+   "id": "A8.2",
+   "file": "m8/A8.2-reverse-forward-loop.md",
+   "title": "A8.2 \u2014 Reverse \u2192 Forward Loop (Spec-from-Legacy, Clean Rebuild)"
+  },
+  {
+   "id": "A8.3",
+   "file": "m8/A8.3-self-applied-brownfield.md",
+   "title": "A8.3: Self-Applied Brownfield (Run the Pipeline on Your Own June-2026 Code)"
+  },
+  {
+   "id": "A8.4",
+   "file": "m8/A8.4-read-hard-codebase.md",
+   "title": "A8.4 \u2014 Read a Hard Codebase By Hand"
+  },
+  {
+   "id": "A8.5",
+   "file": "m8/A8.5-dp-problems.md",
+   "title": "A8.5 \u2014 Daily Dynamic-Programming Problems"
+  },
+  {
+   "id": "M0",
+   "file": "m0/M0-curator-v0.md",
+   "title": "M0: Curator v0"
+  },
+  {
+   "id": "M0",
+   "file": "m0/M0-setup-checklist.md",
+   "title": "M0 Setup \u2014 Tooling, Accounts, and Baseline (D0-1 \u2026 D0-6)"
+  },
+  {
+   "id": "M0",
+   "file": "m0/M0-site-v0.md",
+   "title": "M0 \u2014 Personal Site v0"
+  },
+  {
+   "id": "README",
+   "file": "m10/README.md",
+   "title": "Module 10 \u2014 Capstone Synthesis & Public Launch"
+  },
+  {
+   "id": "A2.1",
+   "file": "m2/A2.1-event-storming.md",
+   "title": "A2.1 \u2014 Solo Event-Storming Session on the Curator"
+  },
+  {
+   "id": "A2.2",
+   "file": "m2/A2.2-curator-v2-ddd-refactor.md",
+   "title": "A2.2: Curator v2: DDD Refactor"
+  },
+  {
+   "id": "A2.3",
+   "file": "m2/A2.3-ubiquitous-language-glossary.md",
+   "title": "A2.3 \u2014 Ubiquitous-Language Glossary in CLAUDE.md"
+  },
+  {
+   "id": "A2.4",
+   "file": "m2/A2.4-hand-drawn-context-map.md",
+   "title": "A2.4 \u2014 Hand-Drawn Context Map (Two Passes)"
+  },
+  {
+   "id": "A2.5",
+   "file": "m2/A2.5-data-structure-katas.md",
+   "title": "A2.5 \u2014 Daily Data-Structures Katas"
+  },
+  {
+   "id": "A7.1",
+   "file": "m7/A7.1-async-task-queue.md",
+   "title": "A7.1: Async Task Queue for the Curator"
+  },
+  {
+   "id": "A7.2",
+   "file": "m7/A7.2-cap-decision.md",
+   "title": "A7.2: Document a CAP Tradeoff + Idempotent At-Least-Once Delivery"
+  },
+  {
+   "id": "A7.3",
+   "file": "m7/A7.3-hand-rolled-raft.md",
+   "title": "A7.3 \u2014 Hand-Rolled Raft (MIT 6.5840 Lab 3A + 3B)"
+  },
+  {
+   "id": "A7.4",
+   "file": "m7/A7.4-algorithms.md",
+   "title": "A7.4 \u2014 Daily Algorithms (Real Difficulty Now)"
+  },
+  {
+   "id": "A7.5",
+   "file": "m7/A7.5-event-ordering.md",
+   "title": "A7.5: Event Ordering & Dependency Sequencing"
+  },
+  {
+   "id": "A1.1",
+   "file": "m1/A1.1-six-anthropic-patterns.md",
+   "title": "A1.1: Implement the Six Anthropic Agent Patterns in the Curator"
+  },
+  {
+   "id": "A1.2",
+   "file": "m1/A1.2-curator-v1-orchestrator.md",
+   "title": "A1.2: The Brain: Program-Aware Triage and Agent-Decision Tracing"
+  },
+  {
+   "id": "A1.3",
+   "file": "m1/A1.3-python-katas.md",
+   "title": "A1.3 \u2014 Daily Typed-Python Katas"
+  },
+  {
+   "id": "A1.4",
+   "file": "m1/A1.4-bm25-by-hand.md",
+   "title": "A1.4 \u2014 Implement BM25 From the Formula, By Hand"
+  },
+  {
+   "id": "A4.1",
+   "file": "m4/A4.1-two-claude-writer-reviewer.md",
+   "title": "A4.1 \u2014 Two-Claude Writer/Reviewer Experiment"
+  },
+  {
+   "id": "A4.2",
+   "file": "m4/A4.2-worktree-parallel-sessions.md",
+   "title": "A4.2 \u2014 Worktree Parallel Sessions"
+  },
+  {
+   "id": "A4.3",
+   "file": "m4/A4.3-spec-first-feature.md",
+   "title": "A4.3 \u2014 Spec-First Feature (Spec \u2192 Plan \u2192 Tests \u2192 Implementation)"
+  },
+  {
+   "id": "A4.4",
+   "file": "m4/A4.4-agentic-ci.md",
+   "title": "A4.4: Agentic CI/CD (PR-Reviewer Sub-Agent + Test-Integrity Hook)"
+  },
+  {
+   "id": "A4.5",
+   "file": "m4/A4.5-system-design-kata.md",
+   "title": "A4.5 \u2014 Weekly System-Design Kata"
+  },
+  {
+   "id": "A4.6",
+   "file": "m4/A4.6-gilded-rose-refactor.md",
+   "title": "A4.6 \u2014 Gilded Rose Refactor By Hand"
+  },
+  {
+   "id": "A3.1",
+   "file": "m3/A3.1-eval-harness.md",
+   "title": "A3.1: Eval Harness for the Curator"
+  },
+  {
+   "id": "A3.2",
+   "file": "m3/A3.2-hybrid-retrieval.md",
+   "title": "A3.2: Hybrid Retrieval (BM25 + Vector + Reranker)"
+  },
+  {
+   "id": "A3.3",
+   "file": "m3/A3.3-observability.md",
+   "title": "A3.3: Observability + SLOs for the Curator"
+  },
+  {
+   "id": "A3.4",
+   "file": "m3/A3.4-daily-trace-grading.md",
+   "title": "A3.4: Daily Hand-Grading of Curator Traces"
+  },
+  {
+   "id": "A3.5",
+   "file": "m3/A3.5-vector-db-sketch.md",
+   "title": "A3.5 \u2014 Sketch a Vector DB By Hand"
+  },
+  {
+   "id": "A9.1",
+   "file": "m9/A9.1-jlox.md",
+   "title": "A9.1 \u2014 Build jlox By Hand"
+  },
+  {
+   "id": "A9.2",
+   "file": "m9/A9.2-clox-extension.md",
+   "title": "A9.2 \u2014 clox Extension (Implement a Nystrom Challenge)"
+  },
+  {
+   "id": "A9.3",
+   "file": "m9/A9.3-engineering-strategy-doc.md",
+   "title": "A9.3: Engineering Strategy Doc (Your Application Artifact)"
+  },
+  {
+   "id": "A9.4",
+   "file": "m9/A9.4-staff-mock-interviews.md",
+   "title": "A9.4 \u2014 Five Staff-Level Mock System-Design Interviews"
+  },
+  {
+   "id": "A9.5",
+   "file": "m9/A9.5-study-dsl.md",
+   "title": "A9.5: A \"Study Tasks\" DSL That Compiles to Curator Tool Calls"
+  },
+  {
+   "id": "A9.6",
+   "file": "m9/A9.6-agent-scaffolding.md",
+   "title": "A9.6: Agents as Scaffolding for Recurring Tasks"
+  },
+  {
+   "id": "RAILS",
+   "file": "rails/RAILS-PROJECT.md",
+   "title": "Rails Project: An Order/Fulfillment Service (learning project, MVP + module)"
+  },
+  {
+   "id": "A6.1",
+   "file": "m6/A6.1-terraform-migration.md",
+   "title": "A6.1 \u2014 Terraform-Manage the Curator + Site"
+  },
+  {
+   "id": "A6.2",
+   "file": "m6/A6.2-cicd-pipeline.md",
+   "title": "A6.2 \u2014 CI/CD Pipeline (Test \u2192 Eval \u2192 Plan \u2192 Apply \u2192 Deploy)"
+  },
+  {
+   "id": "A6.3",
+   "file": "m6/A6.3-containers-k8s.md",
+   "title": "A6.3 \u2014 Containers + Minimal Kubernetes (Learning Only)"
+  },
+  {
+   "id": "A6.4",
+   "file": "m6/A6.4-observability-stack.md",
+   "title": "A6.4 \u2014 Production Observability Stack + Synthetic Monitor"
+  },
+  {
+   "id": "A6.5",
+   "file": "m6/A6.5-terraform-reading.md",
+   "title": "A6.5 \u2014 Read One Production Terraform Module Per Week"
+  },
+  {
+   "id": "A5.1",
+   "file": "m5/A5.1-homelab-mcp.md",
+   "title": "A5.1: MCP Server for the Synology Homelab"
+  },
+  {
+   "id": "A5.2",
+   "file": "m5/A5.2-curator-v3-mcp.md",
+   "title": "A5.2: Curator MCP Refactor (Shared Tool Server)"
+  },
+  {
+   "id": "A5.3",
+   "file": "m5/A5.3-code-mode.md",
+   "title": "A5.3: Code Mode Experiment"
+  },
+  {
+   "id": "A5.4",
+   "file": "m5/A5.4-toy-llm-inference.md",
+   "title": "A5.4 \u2014 Toy LLM Inference Engine (nanoGPT + KV Cache)"
+  },
+  {
+   "id": "A5.5",
+   "file": "m5/A5.5-graph-algorithms.md",
+   "title": "A5.5 \u2014 Daily Graph Algorithms"
+  },
+  {
+   "id": "DDIA",
+   "file": "books/DDIA.md",
+   "title": "Reading Track: Designing Data-Intensive Applications (Kleppmann)"
+  },
+  {
+   "id": "DESIGN",
+   "file": "books/DESIGN-CRAFT.md",
+   "title": "Reading Track: The Design-Craft Debate (Fowler, Feathers, Ousterhout, vs Metz)"
+  },
+  {
+   "id": "KENT",
+   "file": "books/KENT-BECK.md",
+   "title": "Reading Track: Kent Beck on TDD, XP, and Empirical Design"
+  },
+  {
+   "id": "SANDI",
+   "file": "books/SANDI-METZ.md",
+   "title": "Reading Track: Sandi Metz on Object-Oriented Design"
+  },
+  {
+   "id": "CF1",
+   "file": "curator-functions/CF1-feed-management.md",
+   "title": "CF1: Feed Management and Curation"
+  },
+  {
+   "id": "CF2",
+   "file": "curator-functions/CF2-hitl-publish-gate.md",
+   "title": "CF2: Human-in-the-Loop Publish Gate (minimal, early)"
+  },
+  {
+   "id": "CF3",
+   "file": "curator-functions/CF3-backfill-catchup.md",
+   "title": "CF3: Backfill, Catch-Up, and Missed-Day Handling"
+  },
+  {
+   "id": "CF4",
+   "file": "curator-functions/CF4-replanning.md",
+   "title": "CF4: Schedule Replanning (slip reflow)"
+  },
+  {
+   "id": "README",
+   "file": "curator-functions/README.md",
+   "title": "Curator Core Functions"
+  }
+ ]
+}
