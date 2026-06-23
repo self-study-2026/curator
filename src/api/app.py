@@ -1,6 +1,7 @@
 from datetime import datetime
+from typing import Annotated
 
-from fastapi import FastAPI, status
+from fastapi import FastAPI, Query, status
 from pydantic import BaseModel
 
 from src.program.domain import Program
@@ -20,5 +21,5 @@ def health() -> HealthResult:
 
 
 @app.get("/program", status_code=status.HTTP_200_OK)
-async def test_program() -> Program:
-	return handle_read_program(ReadProgramInput(date="today"))
+async def test_program(date: Annotated[str, Query()] = "today") -> Program:
+	return handle_read_program(ReadProgramInput(date=date))
