@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date
 from enum import Enum
 
 
@@ -19,26 +19,18 @@ class EventCategory(Enum):
 			return cls.UNKNOWN
 
 
-def to_date(dt: datetime | date) -> date:
-	return dt.date() if isinstance(dt, datetime) else dt
-
-
 @dataclass
 class RawEvent:
 	category: EventCategory
 	summary: str
-	start: datetime | date
-	end: datetime | date | None
-	rrule_until: date | None = None
+	start: date
+	spec_id: str | None = None
 
 
 @dataclass
 class Session:
-	time: str
 	title: str
 	spec_id: str | None
-	spec_path: str | None
-	time_budget: str | None
 
 
 @dataclass
@@ -54,4 +46,3 @@ class Program:
 	morning_habit: str | None
 	next_milestone: Milestone | None
 	current_phase: str | None
-	plan_error: str | None = None

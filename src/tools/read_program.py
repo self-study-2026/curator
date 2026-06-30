@@ -3,13 +3,11 @@ from pathlib import Path
 
 from pydantic import BaseModel, field_validator
 
-from src.program.adapters.ics_calendar import IcsCalendarSource
-from src.program.adapters.json_spec import JsonSpecSource
+from src.program.adapters.schedule_json import JsonScheduleSource
 from src.program.domain import Program
 from src.program.use_cases import ProgramReader
 
-CALENDAR_PATH = Path(__file__).parents[2] / "resources" / "calendar.ics"
-SYLLABUS_PATH = Path(__file__).parents[2] / "resources" / "syllabus.json"
+SCHEDULE_PATH = Path(__file__).parents[2] / "resources" / "schedule.json"
 
 
 def _parse_date(s: str) -> date:
@@ -34,14 +32,10 @@ def handle_read_program(inp: ReadProgramInput) -> Program:
 	Use this when the user asks what they are studying or what is on their
 	schedule. Pass date="today" for the current day or date="YYYY-MM-DD" for
 	a specific date. Returns sessions, morning habit, current phase, and next
-	milestone. If the spec sidecar is missing, sessions are still returned and
-	plan_error is set.
+	milestone.
 	"""
 	return read_program(_parse_date(inp.date))
 
 
 def read_program(target_date: date) -> Program:
-	return ProgramReader(
-		IcsCalendarSource(CALENDAR_PATH),
-		JsonSpecSource(SYLLABUS_PATH),
-	).read(target_date)
+	return ProgramReader(JsonScheduleSource(SCHEDULE_PATH)).read(target_date)

@@ -1,0 +1,3774 @@
+{
+ "generated": "2026-06-29",
+ "note": "Restructured: AI-foundations-first front (4 learning weeks), interleaved learn-then-build, reslip to Jun 29 2026. Source of truth; ICS rendered from this.",
+ "base": "2026-06-29",
+ "schedule": {
+  "2026-06-29": [
+   {
+    "title": "\ud83d\udcd6 Read Anthropic 'Building Effective Agents' end to end; take structured notes",
+    "type": "reading",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-06-30": [
+   {
+    "title": "\ud83d\udcd6 Read the ReAct paper (Yao et al.); diagram the reason-act-observe loop by hand",
+    "type": "reading",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-01": [
+   {
+    "title": "\ud83d\udcd6 Study the six patterns conceptually: prompt-chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer, autonomous agent. No code yet.",
+    "type": "reading",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-02": [
+   {
+    "title": "\ud83d\udcd6 For each pattern, write 3 sentences: what it is, when it earns its complexity, a real example. This is the judgment you will build on.",
+    "type": "reading",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-03": [
+   {
+    "title": "\ud83d\udd2e Prediction note (PRIVATE): 'What I think an agent actually is' - your prior BEFORE building. Be bold, be wrong; the value is staking a position so you feel the correction later. Not an essay, not graded, not for posting.",
+    "type": "note",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "WRITING"
+   }
+  ],
+  "2026-07-06": [
+   {
+    "title": "\ud83d\udd28 A1.1: scaffold the six patterns as swappable modules sharing one interface",
+    "type": "build",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-07": [
+   {
+    "title": "\ud83d\udd28 A1.1: implement prompt-chaining + routing + parallelization against one shared task",
+    "type": "build",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-08": [
+   {
+    "title": "\ud83d\udd28 A1.1: implement orchestrator-workers + evaluator-optimizer + the autonomous-agent loop",
+    "type": "build",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-09": [
+   {
+    "title": "\ud83d\udd28 A1.1: run all six on the same task, measure (tokens, latency, quality); tabulate",
+    "type": "build",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-10": [
+   {
+    "title": "\u270d\ufe0f A1.1 write-up: when each pattern earns its complexity, backed by YOUR numbers (this is the deliverable, not the demos)",
+    "type": "writing",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "WRITING"
+   }
+  ],
+  "2026-07-13": [
+   {
+    "title": "\ud83d\udcd6 LLM mechanics: context windows, tokenization, sampling/temperature; how they shape agent behavior",
+    "type": "reading",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-14": [
+   {
+    "title": "\ud83d\udcd6 Tool use / function calling deeply: schemas, the model's decision to call, error handling",
+    "type": "reading",
+    "spec_id": "A1.1-six-anthropic-patterns",
+    "code": "A1.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-15": [
+   {
+    "title": "\ud83d\udcd6 DDD intro: strategic vs tactical, why domain modeling matters for agentic systems (clean boundaries = clean tools)",
+    "type": "reading",
+    "spec_id": "A2.1-event-storming",
+    "code": "A2.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-16": [
+   {
+    "title": "\ud83d\udcd6 DDD: event storming as a technique; read the A2.1 spec and an event-storming primer",
+    "type": "reading",
+    "spec_id": "A2.1-event-storming",
+    "code": "A2.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-17": [
+   {
+    "title": "\ud83d\udd2e Prediction note (PRIVATE): 'Why an agent system might be a domain-modeling problem' - your hunch connecting the AI + DDD threads, written before you have built either. A prior to be corrected, not a polished claim.",
+    "type": "note",
+    "spec_id": "A2.1-event-storming",
+    "code": "A2.1",
+    "category": "WRITING"
+   }
+  ],
+  "2026-07-20": [
+   {
+    "title": "\ud83d\udcd6 Eval methodology: why agents need evals, LLM-as-judge, the assertion mindset; read Hamel Husain / Eugene Yan",
+    "type": "reading",
+    "spec_id": "A3.1-eval-harness",
+    "code": "A3.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-21": [
+   {
+    "title": "\ud83d\udcd6 Retrieval basics: keyword vs semantic, what BM25 does and why; read the A1.4 spec",
+    "type": "reading",
+    "spec_id": "A1.4-bm25-by-hand",
+    "code": "A1.4",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-22": [
+   {
+    "title": "\ud83d\udd28 A1.4: implement BM25 by hand on a small corpus (the no-magic retrieval grounding)",
+    "type": "build",
+    "spec_id": "A1.4-bm25-by-hand",
+    "code": "A1.4",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-23": [
+   {
+    "title": "\ud83d\udcd6 Connect it forward: how eval + retrieval will show up in the Curator (the brain's triage, A3.1's harness)",
+    "type": "reading",
+    "spec_id": "A3.1-eval-harness",
+    "code": "A3.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-24": [
+   {
+    "title": "\ud83d\udd2e Prediction note (PRIVATE): 'How I think I will know if my agent is any good' - your eval intuitions before studying eval methodology. Predict; you will check it against reality in M3.",
+    "type": "note",
+    "spec_id": "A3.1-eval-harness",
+    "code": "A3.1",
+    "category": "WRITING"
+   }
+  ],
+  "2026-07-27": [
+   {
+    "title": "\ud83d\udd28 M0: deploy the base Curator (FastAPI on Fly, /health) - the skeleton",
+    "type": "build",
+    "spec_id": "M0-curator-v0",
+    "code": "M0",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-28": [
+   {
+    "title": "\ud83d\udd28 M0: hand-roll the ReAct loop, NOW understanding every line because you studied it in wk0-1",
+    "type": "build",
+    "spec_id": "M0-curator-v0",
+    "code": "M0",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-29": [
+   {
+    "title": "\ud83d\udd28 M0: the two tools (read_program deterministic + fetch_rss) with acceptance tests",
+    "type": "build",
+    "spec_id": "M0-curator-v0",
+    "code": "M0",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-30": [
+   {
+    "title": "\ud83d\udd28 M0: the cron digest (two sections) + Postgres (feeds + seen_items) + README",
+    "type": "build",
+    "spec_id": "M0-curator-v0",
+    "code": "M0",
+    "category": "SESSION"
+   }
+  ],
+  "2026-07-31": [
+   {
+    "title": "\u270d\ufe0f Essay (publishable): revisit your wk0 prediction note now that you have built M0. The pre/post DELTA is the essay - what I believed, what building taught me, why I was wrong. THIS is downstream of the work, so it meets the essay standard.",
+    "type": "writing",
+    "spec_id": "M0-curator-v0",
+    "code": "M0",
+    "category": "WRITING"
+   }
+  ],
+  "2026-08-03": [
+   {
+    "title": "\ud83d\udd28 A2.1: event-storm the Curator's own domain (the technique from wk2, applied for real)",
+    "type": "build",
+    "spec_id": "A2.1-event-storming",
+    "code": "A2.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-04": [
+   {
+    "title": "\ud83d\udd28 A2.1: cluster events into candidate bounded contexts; classify core/supporting/generic",
+    "type": "build",
+    "spec_id": "A2.1-event-storming",
+    "code": "A2.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-05": [
+   {
+    "title": "\ud83d\udd28 A2.1: ubiquitous-language glossary + a hand-drawn context map (no AI)",
+    "type": "build",
+    "spec_id": "A2.1-event-storming",
+    "code": "A2.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-06": [
+   {
+    "title": "\ud83d\udd28 Harden the M0 digest cron; make the two sources fail independently",
+    "type": "build",
+    "spec_id": "M0-curator-v0",
+    "code": "M0",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-07": [
+   {
+    "title": "\u270d\ufe0f Decision memo: the bounded contexts you found and why (feeds the A2.2 refactor)",
+    "type": "writing",
+    "spec_id": "A2.1-event-storming",
+    "code": "A2.1",
+    "category": "WRITING"
+   }
+  ],
+  "2026-08-10": [
+   {
+    "title": "\ud83d\udd28 A3.1: build the eval harness (>=20 assertions) - the methodology you studied wk3, now real",
+    "type": "build",
+    "spec_id": "A3.1-eval-harness",
+    "code": "A3.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-11": [
+   {
+    "title": "\ud83d\udd28 A3.1: hand-grade 10 outputs, align the judge to your labels (the alignment notebook)",
+    "type": "build",
+    "spec_id": "A3.1-eval-harness",
+    "code": "A3.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-12": [
+   {
+    "title": "\ud83d\udd28 A7.1: the async queue + workers (surfaced items fan out; skipped never enqueue)",
+    "type": "build",
+    "spec_id": "A7.1-async-task-queue",
+    "code": "A7.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-13": [
+   {
+    "title": "\ud83d\udd28 A7.1: REST API over the queue + a 15-min queue decision memo",
+    "type": "build",
+    "spec_id": "A7.1-async-task-queue",
+    "code": "A7.1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-14": [
+   {
+    "title": "\u270d\ufe0f Write-up: what the eval harness caught that you would have missed by eyeballing",
+    "type": "writing",
+    "spec_id": "A3.1-eval-harness",
+    "code": "A3.1",
+    "category": "WRITING"
+   }
+  ],
+  "2026-08-17": [
+   {
+    "title": "\ud83d\udd28 P5: seed import (specs.json + program-calendar.ics), verified counts + completion CLI",
+    "type": "build",
+    "spec_id": "P5-program-ownership-now",
+    "code": "P5",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-18": [
+   {
+    "title": "\ud83d\udd28 P5: derived todos (/todos/today) with the adjustment rules",
+    "type": "build",
+    "spec_id": "P5-program-ownership-now",
+    "code": "P5",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-19": [
+   {
+    "title": "\ud83d\udd28 P5: served /calendar.ics (stable UIDs!) + the digest reads /todos/today",
+    "type": "build",
+    "spec_id": "P5-program-ownership-now",
+    "code": "P5",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-20": [
+   {
+    "title": "\ud83d\udd28 P5: /now.json + the site /now page",
+    "type": "build",
+    "spec_id": "P5-program-ownership-now",
+    "code": "P5",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-21": [
+   {
+    "title": "\u270d\ufe0f Reflection: the Curator now owns its own program. What did closing that loop teach you?",
+    "type": "writing",
+    "spec_id": "P5-program-ownership-now",
+    "code": "P5",
+    "category": "WRITING"
+   }
+  ],
+  "2026-08-24": [
+   {
+    "title": "\ud83d\udd28 A1.2: triage orchestrator reads P5 program state (module + writing post)",
+    "type": "build",
+    "spec_id": "A1.2-curator-v1-orchestrator",
+    "code": "A1.2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-25": [
+   {
+    "title": "\ud83d\udd28 A1.2: surfaced-with-reasons citing program state + the writing-post relevance join",
+    "type": "build",
+    "spec_id": "A1.2-curator-v1-orchestrator",
+    "code": "A1.2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-26": [
+   {
+    "title": "\ud83d\udd28 A1.2: decision tracing (JSONL) feeding A3.1 + degraded-mode fallback",
+    "type": "build",
+    "spec_id": "A1.2-curator-v1-orchestrator",
+    "code": "A1.2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-27": [
+   {
+    "title": "\ud83d\udd28 A1.2: the cheap-skip path (one batched triage decision, not N calls)",
+    "type": "build",
+    "spec_id": "A1.2-curator-v1-orchestrator",
+    "code": "A1.2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-08-28": [
+   {
+    "title": "\u270d\ufe0f The interview sentence, earned: 'an agent that knows my study program and filters the field through it.' Write the 2-min version.",
+    "type": "writing",
+    "spec_id": "A1.2-curator-v1-orchestrator",
+    "code": "A1.2",
+    "category": "WRITING"
+   }
+  ],
+  "2026-08-31": [
+   {
+    "title": "\ud83d\udd28 A2.2: Curator refactor - pure domain layer + first aggregate (the DDD payoff)",
+    "type": "build",
+    "spec_id": "A2.2-curator-v2-ddd-refactor",
+    "code": "A2.2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-01": [
+   {
+    "title": "\ud83d\udd28 A2.2: domain events + repositories + an anti-corruption layer; ARCHITECTURE.md",
+    "type": "build",
+    "spec_id": "A2.2-curator-v2-ddd-refactor",
+    "code": "A2.2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-02": [
+   {
+    "title": "\ud83d\udd28 CF1: feeds CLI + per-feed health; CF3: pause/resume scaffolding",
+    "type": "build",
+    "spec_id": "CF1-feed-management",
+    "code": "CF1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-03": [
+   {
+    "title": "\ud83d\udd28 CF2: pending-state digest + review/approve/reject gate; public surfaces gated",
+    "type": "build",
+    "spec_id": "CF2-hitl-publish-gate",
+    "code": "CF2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-04": [
+   {
+    "title": "\u270d\ufe0f Before/after: the Curator's domain model pre- and post-DDD-refactor. What got clearer?",
+    "type": "writing",
+    "spec_id": "A2.2-curator-v2-ddd-refactor",
+    "code": "A2.2",
+    "category": "WRITING"
+   }
+  ],
+  "2026-09-07": [
+   {
+    "title": "\ud83d\udcda Combined block: DDD + Distributed Systems",
+    "type": "phase",
+    "spec_id": null,
+    "code": null,
+    "category": "PHASE"
+   }
+  ],
+  "2026-09-08": [
+   {
+    "title": "\ud83d\udcd6 Vernon, DDD Distilled, Ch 1-3",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-10": [
+   {
+    "title": "\ud83d\udcd6 Evans, DDD, Part I (Ch 1-4)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-15": [
+   {
+    "title": "\ud83d\udcd6 Evans, DDD, Part IV (context maps)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-17": [
+   {
+    "title": "\ud83d\udcd6 Vernon, DDD Distilled, Ch 4-7",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-22": [
+   {
+    "title": "\ud83d\udcd6 Evans, DDD, Part II (Ch 5-7)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-24": [
+   {
+    "title": "\ud83d\udcd6 Evans, DDD, Ch 8-9",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-09-29": [
+   {
+    "title": "\ud83d\udcd6 Vernon, integration chapters",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-01": [
+   {
+    "title": "\u270d\ufe0f CB-B1 blog draft (no AI)",
+    "type": "writing",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-02": [
+   {
+    "title": "\u270d\ufe0f Finish + publish CB-B1",
+    "type": "writing",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-05": [
+   {
+    "title": "\ud83d\udd28 Plan the first service extraction (CB1)",
+    "type": "build",
+    "spec_id": "CB1-extract-microservice",
+    "code": "CB1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-06": [
+   {
+    "title": "\ud83d\udcd6 Newman, Building Microservices, Ch 1-3",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-07": [
+   {
+    "title": "\ud83d\udd28 CB1: extract the bounded context into a service",
+    "type": "build",
+    "spec_id": "CB1-extract-microservice",
+    "code": "CB1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-08": [
+   {
+    "title": "\ud83d\udcd6 Newman Ch 4 + DDIA Ch 4",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-09": [
+   {
+    "title": "\ud83d\udd28 CB1: service API + data ownership boundary",
+    "type": "build",
+    "spec_id": "CB1-extract-microservice",
+    "code": "CB1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-12": [
+   {
+    "title": "\ud83d\udd28 CB1: wire async events over the sprint queue",
+    "type": "build",
+    "spec_id": "CB1-extract-microservice",
+    "code": "CB1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-13": [
+   {
+    "title": "\ud83d\udcd6 Newman Ch 5",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-14": [
+   {
+    "title": "\ud83d\udd28 CB1 finish: two services talk end to end",
+    "type": "build",
+    "spec_id": "CB1-extract-microservice",
+    "code": "CB1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-15": [
+   {
+    "title": "\ud83d\udcd6 DDIA Ch 5 (replication, deeper)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-16": [
+   {
+    "title": "\ud83d\udd28 Add a sync gRPC/REST path; compare to async",
+    "type": "build",
+    "spec_id": "CB1-extract-microservice",
+    "code": "CB1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-19": [
+   {
+    "title": "\ud83d\udd28 CB2: saga across the two services (start)",
+    "type": "build",
+    "spec_id": "CB2-saga-across-services",
+    "code": "CB2",
+    "category": "SESSION"
+   },
+   {
+    "title": "\u2139\ufe0f XW1 (lab-domain literacy) activates if Satomic lands: front-load into the role's first two months",
+    "type": "note",
+    "spec_id": null,
+    "code": null,
+    "category": "NOTE"
+   }
+  ],
+  "2026-10-20": [
+   {
+    "title": "\ud83d\udcd6 Newman Ch 6 (sagas)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-21": [
+   {
+    "title": "\ud83d\udd28 CB2: compensation + the outbox pattern",
+    "type": "build",
+    "spec_id": "CB2-saga-across-services",
+    "code": "CB2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-22": [
+   {
+    "title": "\ud83d\udcd6 DDIA Ch 7-9 (deeper)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-23": [
+   {
+    "title": "\ud83d\udd28 CB2: inject failures, prove compensation",
+    "type": "build",
+    "spec_id": "CB2-saga-across-services",
+    "code": "CB2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-26": [
+   {
+    "title": "\ud83d\udd28 CB3: strangler fig, facade + first seam",
+    "type": "build",
+    "spec_id": "CB3-split-monolith",
+    "code": "CB3",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-27": [
+   {
+    "title": "\ud83d\udcd6 Newman, monolith decomposition",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-28": [
+   {
+    "title": "\ud83d\udd28 CB3: second seam planned, both paths live",
+    "type": "build",
+    "spec_id": "CB3-split-monolith",
+    "code": "CB3",
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-29": [
+   {
+    "title": "\u270d\ufe0f CB-B2 blog draft (no AI)",
+    "type": "writing",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-10-30": [
+   {
+    "title": "\u270d\ufe0f Publish CB-B2 + final ARCHITECTURE.md update",
+    "type": "writing",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 Combined block complete: DDD form + 2 services + saga + split",
+    "type": "milestone",
+    "spec_id": null,
+    "code": null,
+    "category": "MILESTONE"
+   }
+  ],
+  "2026-11-02": [
+   {
+    "title": "\ud83d\udd28 P1: seed 1M skewed rows + pg_stat_statements hunt",
+    "type": "build",
+    "spec_id": "P1-postgres-performance-lab",
+    "code": "P1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda Platform hardening: P1-P4 + XD2/XD4",
+    "type": "phase",
+    "spec_id": "P1-postgres-performance-lab",
+    "code": "P1",
+    "category": "PHASE"
+   }
+  ],
+  "2026-11-03": [
+   {
+    "title": "\ud83d\udcd6 Use the Index, Luke (btree chapters)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-04": [
+   {
+    "title": "\ud83d\udd28 P1: EXPLAIN ANALYZE top-3 + fixes (one rejected)",
+    "type": "build",
+    "spec_id": "P1-postgres-performance-lab",
+    "code": "P1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-05": [
+   {
+    "title": "\ud83d\udcd6 Postgres EXPLAIN + pg_stat_statements docs",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-06": [
+   {
+    "title": "\ud83d\udd28 P1: expand-contract migration, live, zero downtime",
+    "type": "build",
+    "spec_id": "P1-postgres-performance-lab",
+    "code": "P1",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-09": [
+   {
+    "title": "\ud83d\udd28 P2: k6 harness + baseline (both paths)",
+    "type": "build",
+    "spec_id": "P2-load-test-capacity",
+    "code": "P2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-10": [
+   {
+    "title": "\ud83d\udcd6 Harchol-Balter Ch 1-2 + Brooker queueing posts (XD2)",
+    "type": "reading",
+    "spec_id": "XD2-queueing-theory",
+    "code": "XD2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-11": [
+   {
+    "title": "\ud83d\udd28 P2: ramp to the bottleneck + fix exactly one thing",
+    "type": "build",
+    "spec_id": "P2-load-test-capacity",
+    "code": "P2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-12": [
+   {
+    "title": "\ud83d\udcd6 Harchol-Balter Ch 13-15 (M/M/1, M/M/c) (XD2)",
+    "type": "reading",
+    "spec_id": "XD2-queueing-theory",
+    "code": "XD2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-13": [
+   {
+    "title": "\ud83d\udd28 XD2: predict latency curve, validate vs P2, capacity-math note",
+    "type": "build",
+    "spec_id": "XD2-queueing-theory",
+    "code": "XD2",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-16": [
+   {
+    "title": "\ud83d\udd28 P3: v2 translation layer + deprecation headers + metric",
+    "type": "build",
+    "spec_id": "P3-api-contract-evolution",
+    "code": "P3",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-17": [
+   {
+    "title": "\ud83d\udcd6 Stripe API versioning posts + RFC 8594",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-18": [
+   {
+    "title": "\ud83d\udd28 P3: migrate the consumer via your own note; sunset v1",
+    "type": "build",
+    "spec_id": "P3-api-contract-evolution",
+    "code": "P3",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-19": [
+   {
+    "title": "\ud83d\udcd6 Hypothesis docs + MacIver essays (XD4)",
+    "type": "reading",
+    "spec_id": "XD4-property-based-testing",
+    "code": "XD4",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-20": [
+   {
+    "title": "\ud83d\udd28 XD4: properties on idempotency + ordering; shrink exercise; CI profiles",
+    "type": "build",
+    "spec_id": "XD4-property-based-testing",
+    "code": "XD4",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-23": [
+   {
+    "title": "\ud83d\udd28 P4: write the three failure injects, then forget them",
+    "type": "build",
+    "spec_id": "P4-game-day-postmortem",
+    "code": "P4",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-24": [
+   {
+    "title": "\ud83d\udcd6 SRE Workbook, postmortem culture chapter",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-25": [
+   {
+    "title": "\ud83d\udd25 P4 GAME DAY: respond for real, notes as you go",
+    "type": "build",
+    "spec_id": "P4-game-day-postmortem",
+    "code": "P4",
+    "category": "SESSION"
+   }
+  ],
+  "2026-11-27": [
+   {
+    "title": "\ud83c\udfc1 Platform hardening done: perf, capacity, contract, game day",
+    "type": "milestone",
+    "spec_id": null,
+    "code": null,
+    "category": "MILESTONE"
+   }
+  ],
+  "2026-11-30": [
+   {
+    "title": "\ud83d\udd28 CF4: the constrained reflow algorithm (weekday-evening, break + milestones fixed)",
+    "type": "build",
+    "spec_id": "CF4-replanning",
+    "code": "CF4",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda CF4: schedule replanning (slip reflow)",
+    "type": "phase",
+    "spec_id": "CF4-replanning",
+    "code": "CF4",
+    "category": "PHASE"
+   }
+  ],
+  "2026-12-01": [
+   {
+    "title": "\ud83d\udcd6 Re-read your own ICS rules (stable UIDs!) + the syllabus adjustment rules",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-12-02": [
+   {
+    "title": "\ud83d\udd28 CF4: replan --dry-run (mandatory preview) + the no-cascade guarantees",
+    "type": "build",
+    "spec_id": "CF4-replanning",
+    "code": "CF4",
+    "category": "SESSION"
+   }
+  ],
+  "2026-12-03": [
+   {
+    "title": "\ud83d\udcd6 Constraint-scheduling notes; the cannot-absorb honest-failure path",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-12-04": [
+   {
+    "title": "\ud83d\udd28 CF4: replan --apply regenerates store + served calendar (stable UIDs) + tests",
+    "type": "build",
+    "spec_id": "CF4-replanning",
+    "code": "CF4",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 CF4 done: the schedule heals itself when you slip (dry-run + approve)",
+    "type": "milestone",
+    "spec_id": "CF4-replanning",
+    "code": "CF4",
+    "category": "MILESTONE"
+   }
+  ],
+  "2026-12-07": [
+   {
+    "title": "\ud83d\udcda M3: Evals, Observability, RAG",
+    "type": "phase",
+    "spec_id": "M3-launch",
+    "code": "M3",
+    "category": "PHASE"
+   }
+  ],
+  "2026-12-08": [
+   {
+    "title": "\ud83d\udcd6 Hamel Husain eval essays",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-12-10": [
+   {
+    "title": "\ud83d\udcd6 Eugene Yan, evals + LLM-patterns posts",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-12-15": [
+   {
+    "title": "\ud83d\udcd6 LLM-as-judge papers + alignment writeups",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2026-12-17": [
+   {
+    "title": "\ud83d\udcd6 Husain on judge alignment",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-01-04": [
+   {
+    "title": "\ud83d\udd28 A3.5: vector-DB sketch by hand, then Chroma source",
+    "type": "build",
+    "spec_id": "A3.5-vector-db-sketch",
+    "code": "A3.5",
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B2.1: Bounded Contexts",
+    "type": "writing",
+    "spec_id": "B2.1",
+    "code": "B2.1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-05": [
+   {
+    "title": "\ud83d\udcd6 HNSW paper or a faithful explainer",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B2.2: DDD #2",
+    "type": "writing",
+    "spec_id": "B2.2",
+    "code": "B2.2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-06": [
+   {
+    "title": "\ud83d\udd28 Eval harness polish + A3.4 cross-checks vs judge",
+    "type": "build",
+    "spec_id": "A3.4-daily-trace-grading",
+    "code": "A3.4",
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B-KB1: What TDD by Example Actually Teaches (kata/TDD piece)",
+    "type": "writing",
+    "spec_id": "B-KB1",
+    "code": "B-KB1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-07": [
+   {
+    "title": "\ud83d\udcd6 Your own trace-grading log (rollup)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B3.1: Production AI #1",
+    "type": "writing",
+    "spec_id": "B3.1",
+    "code": "B3.1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-08": [
+   {
+    "title": "\ud83c\udfc1 M3 capstone: eval-gated release live + B3.1 draft",
+    "type": "build",
+    "spec_id": "M3-launch",
+    "code": "M3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 M3: eval-gated releases live (Stage 1 gate clears)",
+    "type": "milestone",
+    "spec_id": "M3-launch",
+    "code": "M3",
+    "category": "MILESTONE"
+   },
+   {
+    "title": "WRITE B3.2: Production AI #2",
+    "type": "writing",
+    "spec_id": "B3.2",
+    "code": "B3.2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-11": [
+   {
+    "title": "\ud83d\udd28 A4.2: three worktrees, three approaches",
+    "type": "build",
+    "spec_id": "A4.2-worktree-parallel-sessions",
+    "code": "A4.2",
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B4.1: Agentic Coding #1",
+    "type": "writing",
+    "spec_id": "B4.1",
+    "code": "B4.1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-12": [
+   {
+    "title": "\ud83d\udcd6 Parallel-session writeups + git worktree docs",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcd6 PagerDuty incident-response docs",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-01-13": [
+   {
+    "title": "\ud83d\udd28 A4.2: evaluate vs pre-stated criteria, merge winner",
+    "type": "build",
+    "spec_id": "A4.2-worktree-parallel-sessions",
+    "code": "A4.2",
+    "category": "SESSION"
+   },
+   {
+    "title": "\u270d\ufe0f P4: blameless postmortem + close one action item",
+    "type": "writing",
+    "spec_id": "P4-game-day-postmortem",
+    "code": "P4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-02-01": [
+   {
+    "title": "\ud83d\udd28 A4.4: agentic CI reviewer action on a real PR",
+    "type": "build",
+    "spec_id": "A4.4-agentic-ci",
+    "code": "A4.4",
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B-DD2: There Are No Solutions, Only Trade-offs (ARCHITECTURE.md)",
+    "type": "writing",
+    "spec_id": "B-DD2",
+    "code": "B-DD2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-02": [
+   {
+    "title": "\ud83d\udcd6 Fowler/Boeckeler, Exploring Gen AI",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B-DC3: The Smell Is Not the Problem (DDD refactor)",
+    "type": "writing",
+    "spec_id": "B-DC3",
+    "code": "B-DC3",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-03": [
+   {
+    "title": "\ud83d\udd28 A4.4: objective gates + test-weakening hook",
+    "type": "build",
+    "spec_id": "A4.4-agentic-ci",
+    "code": "A4.4",
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B-SM2: Duck Typing (Rails/tier-2 katas)",
+    "type": "writing",
+    "spec_id": "B-SM2",
+    "code": "B-SM2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-04": [
+   {
+    "title": "\ud83d\udcd6 Re-read your A4.1 adjudication notes",
+    "type": "reading",
+    "spec_id": "A4.1-two-claude-writer-reviewer",
+    "code": "A4.1",
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B-SM5: Replacing Conditionals with Objects (order state machine)",
+    "type": "writing",
+    "spec_id": "B-SM5",
+    "code": "B-SM5",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-05": [
+   {
+    "title": "\ud83d\udd28 A4.6: Gilded Rose no-AI + M4 capstone handoff doc",
+    "type": "build",
+    "spec_id": "A4.6-gilded-rose-refactor",
+    "code": "A4.6",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 M4: agentic workflow codified (CLAUDE.md v2, CI reviewer)",
+    "type": "milestone",
+    "spec_id": "M4-launch",
+    "code": "M4",
+    "category": "MILESTONE"
+   },
+   {
+    "title": "WRITE B-KB2: Tidy First? Economics of When to Clean (refactor)",
+    "type": "writing",
+    "spec_id": "B-KB2",
+    "code": "B-KB2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-22": [
+   {
+    "title": "\ud83d\udd28 A5.4: nanoGPT model + training (no AI, typed by hand)",
+    "type": "build",
+    "spec_id": "A5.4-toy-llm-inference",
+    "code": "A5.4",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda M5: MCP + Tool Engineering + toy LLM",
+    "type": "phase",
+    "spec_id": "M5-launch",
+    "code": "M5",
+    "category": "PHASE"
+   }
+  ],
+  "2027-02-23": [
+   {
+    "title": "\ud83d\udcd6 Karpathy, Let's build GPT (watch + notes)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-02-24": [
+   {
+    "title": "\ud83d\udd28 A5.4: multi-head attention by hand",
+    "type": "build",
+    "spec_id": "A5.4-toy-llm-inference",
+    "code": "A5.4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-02-25": [
+   {
+    "title": "\ud83d\udcd6 Raschka, Build an LLM (reference dips)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-02-26": [
+   {
+    "title": "\ud83d\udd28 A5.4: autoregressive generation working",
+    "type": "build",
+    "spec_id": "A5.4-toy-llm-inference",
+    "code": "A5.4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-01": [
+   {
+    "title": "\ud83d\udd28 A5.4: KV cache by hand + latency benchmark",
+    "type": "build",
+    "spec_id": "A5.4-toy-llm-inference",
+    "code": "A5.4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-02": [
+   {
+    "title": "\ud83d\udcd6 MCP spec (tools, transports)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-03": [
+   {
+    "title": "\ud83d\udd28 A5.1: tool contracts as failing tests first",
+    "type": "build",
+    "spec_id": "A5.1-homelab-mcp",
+    "code": "A5.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-04": [
+   {
+    "title": "\ud83d\udcd6 OWASP MCP Security Cheat Sheet",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-05": [
+   {
+    "title": "\ud83d\udd28 A5.1: handlers + Docker adapter + denylist",
+    "type": "build",
+    "spec_id": "A5.1-homelab-mcp",
+    "code": "A5.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-08": [
+   {
+    "title": "\ud83d\udd28 A5.1: both transports + audit log",
+    "type": "build",
+    "spec_id": "A5.1-homelab-mcp",
+    "code": "A5.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-09": [
+   {
+    "title": "\ud83d\udcd6 MCP auth spec sections",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-10": [
+   {
+    "title": "\ud83d\udd28 A5.2: read-only lift + thin client (real-use week starts)",
+    "type": "build",
+    "spec_id": "A5.2-curator-v3-mcp",
+    "code": "A5.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-11": [
+   {
+    "title": "\ud83d\udcd6 Your A5.1 usage journal (annoyances = design input)",
+    "type": "reading",
+    "spec_id": "A5.1-homelab-mcp",
+    "code": "A5.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-12": [
+   {
+    "title": "\ud83d\udd28 A5.2: reader tier + resume bot wired",
+    "type": "build",
+    "spec_id": "A5.2-curator-v3-mcp",
+    "code": "A5.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-15": [
+   {
+    "title": "\ud83d\udd28 A5.2: mutating tools + HITL gate + raw-HTTP bypass test",
+    "type": "build",
+    "spec_id": "A5.2-curator-v3-mcp",
+    "code": "A5.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-16": [
+   {
+    "title": "\ud83d\udcd6 Anthropic, code execution with MCP",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-17": [
+   {
+    "title": "\ud83d\udd28 A5.3: sandbox + TS SDK + the 15-query set",
+    "type": "build",
+    "spec_id": "A5.3-code-mode",
+    "code": "A5.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-18": [
+   {
+    "title": "\ud83d\udcd6 Cloudflare Code Mode writeup",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-19": [
+   {
+    "title": "\ud83c\udfc1 A5.3 measurement + threat note; M5 capstone + B5.2 draft",
+    "type": "build",
+    "spec_id": "A5.3-code-mode",
+    "code": "A5.3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 M5: MCP tool platform + Code Mode judgment + nanoGPT",
+    "type": "milestone",
+    "spec_id": "M5-launch",
+    "code": "M5",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-03-22": [
+   {
+    "title": "\ud83d\udd28 A6.3: multi-stage container + k3s on the Synology",
+    "type": "build",
+    "spec_id": "A6.3-containers-k8s",
+    "code": "A6.3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda M6 leftovers: k8s literacy + IaC reading",
+    "type": "phase",
+    "spec_id": "M6-launch",
+    "code": "M6",
+    "category": "PHASE"
+   }
+  ],
+  "2027-03-23": [
+   {
+    "title": "\ud83d\udcd6 Brian Holt, Complete Intro to Containers",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-24": [
+   {
+    "title": "\ud83d\udd28 A6.3: Helm chart (deployment, service, config, secrets)",
+    "type": "build",
+    "spec_id": "A6.3-containers-k8s",
+    "code": "A6.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-25": [
+   {
+    "title": "\ud83d\udcd6 Brikman, Fundamentals of DevOps (orchestration)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-26": [
+   {
+    "title": "\ud83d\udd28 A6.3: migration-path doc + stay-on-Fly rationale",
+    "type": "build",
+    "spec_id": "A6.3-containers-k8s",
+    "code": "A6.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-29": [
+   {
+    "title": "\ud83d\udd28 A6.5: Terraform module reading + refactor notes",
+    "type": "build",
+    "spec_id": "A6.5-terraform-reading",
+    "code": "A6.5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-30": [
+   {
+    "title": "\ud83d\udcd6 Terraform Up & Running, module chapters",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-03-31": [
+   {
+    "title": "\ud83d\udd28 Observability dashboard polish + runbook gaps from P4",
+    "type": "build",
+    "spec_id": "P4-game-day-postmortem",
+    "code": "P4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-01": [
+   {
+    "title": "\ud83d\udcd6 Your own postmortem action items",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-02": [
+   {
+    "title": "\ud83c\udfc1 M6 wrap: infra README current and true",
+    "type": "build",
+    "spec_id": "M6-launch",
+    "code": "M6",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 M6 closed: k8s literacy, the deliberate non-migration",
+    "type": "milestone",
+    "spec_id": "M6-launch",
+    "code": "M6",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-04-05": [
+   {
+    "title": "\ud83d\udd28 XF2: namespaces stage (UTS+PID), fork/exec shell",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XF2: OS Internals, container from scratch",
+    "type": "phase",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "PHASE"
+   }
+  ],
+  "2027-04-06": [
+   {
+    "title": "\ud83d\udcd6 OSTEP: processes + scheduling (virtualization)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-07": [
+   {
+    "title": "\ud83d\udd28 XF2: pivot_root into Alpine rootfs + mount /proc",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-08": [
+   {
+    "title": "\ud83d\udcd6 OSTEP: memory virtualization chapters",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-09": [
+   {
+    "title": "\ud83d\udd28 Watch Liz Rice once, rebuild stages from notes (no AI)",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-12": [
+   {
+    "title": "\ud83d\udd28 XF2: cgroup v2 memory limit + OOM-kill proof",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-13": [
+   {
+    "title": "\ud83d\udcd6 Kerrisk, LWN namespaces series",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-14": [
+   {
+    "title": "\ud83d\udd28 XF2: CPU limit + throttling shown in cgroup stats",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-15": [
+   {
+    "title": "\ud83d\udcd6 cgroup v2 kernel docs",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-16": [
+   {
+    "title": "\ud83d\udd28 XF2: annotated strace of container startup",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-19": [
+   {
+    "title": "\ud83d\udd28 XF2: PID 1 zombie demo + the fix",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-20": [
+   {
+    "title": "\ud83d\udcd6 Julia Evans, How Containers Work zine",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-21": [
+   {
+    "title": "\ud83d\udd28 XF2: the explain-Docker note (map built to bought)",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-22": [
+   {
+    "title": "\ud83d\udcd6 CS:APP Ch 8 (processes), optional rigor",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-23": [
+   {
+    "title": "\ud83c\udfc1 XF2 wrap; optional xv6 taste if hooked",
+    "type": "build",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XF2: you built a container; k8s is now machinery",
+    "type": "milestone",
+    "spec_id": "XF2-os-internals-container",
+    "code": "XF2",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-04-26": [
+   {
+    "title": "\ud83d\udd28 XF1: raw-socket server, accept + parse (no AI)",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XF1: Networking from first principles",
+    "type": "phase",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "PHASE"
+   }
+  ],
+  "2027-04-27": [
+   {
+    "title": "\ud83d\udcd6 Beej's Guide (sockets) + Kurose Ch 2",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-28": [
+   {
+    "title": "\ud83d\udd28 XF1: partial reads + keep-alive (the TCP lesson)",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-29": [
+   {
+    "title": "\ud83d\udcd6 HPBN Ch 1-2 (TCP behavior)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-04-30": [
+   {
+    "title": "\ud83d\udd28 XF1: torture tests + serve a real browser",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-03": [
+   {
+    "title": "\ud83d\udd28 XF1: capture TCP + TLS 1.3 handshakes, annotate",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-04": [
+   {
+    "title": "\ud83d\udcd6 The Illustrated TLS 1.3 Connection (with your capture open)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-05": [
+   {
+    "title": "\ud83d\udd28 XF1: HTTP/2 multiplexing + DNS captures",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-06": [
+   {
+    "title": "\ud83d\udcd6 HPBN Ch 3-4 + Ch 12",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-07": [
+   {
+    "title": "\ud83d\udd28 XF1: induced failure capture, read it cold",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-10": [
+   {
+    "title": "\ud83d\udd28 XF1: proxy-timeout capture + FIN/RST walkthrough",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-11": [
+   {
+    "title": "\ud83d\udcd6 Kurose Ch 3 (transport)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-12": [
+   {
+    "title": "\ud83d\udd28 XF1: load-balancer note (L4 vs L7, where TLS terminates)",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-13": [
+   {
+    "title": "\ud83d\udcd6 Julia Evans networking zine + tcpdump posts",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-14": [
+   {
+    "title": "\ud83c\udfc1 XF1: mystery-capture diagnosis + wrap",
+    "type": "build",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XF1: you can read a packet capture cold",
+    "type": "milestone",
+    "spec_id": "XF1-networking-first-principles",
+    "code": "XF1",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-05-17": [
+   {
+    "title": "\ud83d\udd28 XF3: USE-method pass over the deployed Curator",
+    "type": "build",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XF3: Performance engineering",
+    "type": "phase",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "PHASE"
+   }
+  ],
+  "2027-05-18": [
+   {
+    "title": "\ud83d\udcd6 Gregg, Systems Performance Ch 1-2",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-19": [
+   {
+    "title": "\ud83d\udd28 XF3: py-spy flamegraphs, explain the top 3 sinks",
+    "type": "build",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-20": [
+   {
+    "title": "\ud83d\udcd6 Gregg flamegraph pages + talk",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-21": [
+   {
+    "title": "\ud83d\udd28 XF3: off-CPU demonstration (waiting vs compute)",
+    "type": "build",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-24": [
+   {
+    "title": "\ud83d\udd28 XF3: investigation, hypothesis first, then profile",
+    "type": "build",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-25": [
+   {
+    "title": "\ud83d\udcd6 Gregg Ch 5-6 + Kalibera & Jones skim",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-26": [
+   {
+    "title": "\ud83d\udd28 XF3: fix + statistically sound before/after",
+    "type": "build",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-27": [
+   {
+    "title": "\ud83d\udcd6 MIT 6.172 lectures 1-2 (optional)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-05-28": [
+   {
+    "title": "\ud83c\udfc1 XF3: write-up + the when-not-to note",
+    "type": "build",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XF3: performance is now a method, not an instinct",
+    "type": "milestone",
+    "spec_id": "XF3-performance-engineering",
+    "code": "XF3",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-05-31": [
+   {
+    "title": "\ud83d\udd28 XD1: memtable + WAL with fsync + replay (no AI)",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XD1: Toy storage engine (LSM + WAL)",
+    "type": "phase",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "PHASE"
+   }
+  ],
+  "2027-06-01": [
+   {
+    "title": "\ud83d\udcd6 DDIA Ch 3 re-read",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-02": [
+   {
+    "title": "\ud83d\udd28 XD1: SSTable flush + newest-first read path",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-03": [
+   {
+    "title": "\ud83d\udcd6 Petrov, Database Internals Part I (alongside)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-04": [
+   {
+    "title": "\ud83d\udd28 XD1: kill-test v1",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-07": [
+   {
+    "title": "\ud83d\udd28 XD1: tombstones + compaction merge (no AI, the heart)",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-08": [
+   {
+    "title": "\ud83d\udcd6 Petrov LSM chapters + RocksDB wiki (Compaction)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-09": [
+   {
+    "title": "\ud83d\udd28 XD1: bloom filters per SSTable",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-10": [
+   {
+    "title": "\ud83d\udcd6 RocksDB wiki (Bloom Filter) + the math",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-11": [
+   {
+    "title": "\ud83d\udd28 XD1: 20-round kill-test",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-14": [
+   {
+    "title": "\ud83d\udd28 XD1: measurements (write throughput, aged reads)",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-15": [
+   {
+    "title": "\ud83d\udcd6 CMU 15-445 storage + buffer pool lectures",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-16": [
+   {
+    "title": "\ud83d\udd28 XD1: bloom hit rate + read amplification",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-17": [
+   {
+    "title": "\ud83d\udcd6 SQLite arch docs (the B-tree contrast)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-18": [
+   {
+    "title": "\ud83c\udfc1 XD1: the connecting write-up (your engine vs real ones)",
+    "type": "build",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XD1: storage engine crash-proven; P1 makes deep sense now",
+    "type": "milestone",
+    "spec_id": "XD1-toy-storage-engine",
+    "code": "XD1",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-06-21": [
+   {
+    "title": "\ud83d\udd28 XD3: learntla on-ramp (PlusCal)",
+    "type": "build",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XD3: TLA+ on the saga",
+    "type": "phase",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "PHASE"
+   }
+  ],
+  "2027-06-22": [
+   {
+    "title": "\ud83d\udcd6 AWS formal methods CACM paper (motivation, read first)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-23": [
+   {
+    "title": "\ud83d\udd28 XD3: model the saga (states, dup+reorder messages)",
+    "type": "build",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-24": [
+   {
+    "title": "\ud83d\udcd6 Practical TLA+ Ch 1-5",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-25": [
+   {
+    "title": "\ud83d\udd28 XD3: invariants in English, then TLA+",
+    "type": "build",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-28": [
+   {
+    "title": "\ud83d\udd28 XD3: TLC runs + minimize any violation trace",
+    "type": "build",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-29": [
+   {
+    "title": "\ud83d\udcd6 Lamport video course, first lectures",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-06-30": [
+   {
+    "title": "\ud83d\udd28 XD3: spec-bug vs implementation-bug verdict (+CB2 fix?)",
+    "type": "build",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-01": [
+   {
+    "title": "\ud83d\udcd6 Brooker TLA+ posts",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-02": [
+   {
+    "title": "\ud83c\udfc1 XD3: divergence write-up (model vs reality)",
+    "type": "build",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XD3: a model checker examined your saga",
+    "type": "milestone",
+    "spec_id": "XD3-formal-methods-tla",
+    "code": "XD3",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-07-05": [
+   {
+    "title": "\ud83d\udd28 Raft: paper twice + Students' Guide, notes (no AI)",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda A7.3: Hand-rolled Raft (un-deferred)",
+    "type": "phase",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "PHASE"
+   }
+  ],
+  "2027-07-06": [
+   {
+    "title": "\ud83d\udcd6 Raft paper \u00a71-5",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-07": [
+   {
+    "title": "\ud83d\udd28 Raft 3A: election state + RPCs",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-08": [
+   {
+    "title": "\ud83d\udcd6 Students' Guide to Raft (pitfalls)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-09": [
+   {
+    "title": "\ud83d\udd28 Raft 3A: election under partition, tests",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-12": [
+   {
+    "title": "\ud83d\udd28 Raft 3A: harden, run the suite repeatedly",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-13": [
+   {
+    "title": "\ud83d\udcd6 MIT 6.5840 Lec 6 notes",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-14": [
+   {
+    "title": "\ud83d\udd28 Raft 3B: log replication begins",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-15": [
+   {
+    "title": "\ud83d\udcd6 MIT 6.5840 Lec 7 notes",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-16": [
+   {
+    "title": "\ud83d\udd28 Raft 3B: replication continues, bug log running",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-19": [
+   {
+    "title": "\ud83d\udd28 Raft 3B: official tests to green",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-20": [
+   {
+    "title": "\ud83d\udcd6 Your own bug log (the B7.1 raw material)",
+    "type": "reading",
+    "spec_id": "B7.1",
+    "code": "B7.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-21": [
+   {
+    "title": "\ud83d\udd28 Raft: repeated suite runs, hunt the flakes",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-22": [
+   {
+    "title": "\ud83d\udcd6 Re-read paper \u00a75.4 with fresh eyes",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-23": [
+   {
+    "title": "\ud83c\udfc1 Raft: tc netem packet-loss demo, recorded",
+    "type": "build",
+    "spec_id": "A7.3-hand-rolled-raft",
+    "code": "A7.3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 Raft passes the official suite under packet loss",
+    "type": "milestone",
+    "spec_id": null,
+    "code": null,
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-07-26": [
+   {
+    "title": "\ud83d\udd28 XD5: Redpanda on the Synology + partition-key design",
+    "type": "build",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XD5: Streaming, queue to log",
+    "type": "phase",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "PHASE"
+   }
+  ],
+  "2027-07-27": [
+   {
+    "title": "\ud83d\udcd6 Kreps, The Log (the thesis, read first)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-28": [
+   {
+    "title": "\ud83d\udd28 XD5: digest consumer group + a second independent consumer",
+    "type": "build",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-29": [
+   {
+    "title": "\ud83d\udcd6 DDIA Ch 11",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-07-30": [
+   {
+    "title": "\ud83d\udd28 XD5: replay from offset zero, diff-proof the rebuild",
+    "type": "build",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-02": [
+   {
+    "title": "\ud83d\udd28 XD5: rebalancing, scale up and down, watch partitions move",
+    "type": "build",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-03": [
+   {
+    "title": "\ud83d\udcd6 Kafka: The Definitive Guide (reliability + EOS chapters)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-04": [
+   {
+    "title": "\ud83d\udd28 XD5: exactly-once investigation (or justified declination)",
+    "type": "build",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-05": [
+   {
+    "title": "\ud83d\udcd6 Stopford, Designing Event-Driven Systems (skim)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-06": [
+   {
+    "title": "\ud83c\udfc1 XD5: the queue-vs-log contrast note",
+    "type": "build",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XD5: queue vs log answered from your own systems",
+    "type": "milestone",
+    "spec_id": "XD5-streaming-queue-to-log",
+    "code": "XD5",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-08-09": [
+   {
+    "title": "\ud83d\udd28 A8.1: AST to graph + 10-edge spot check",
+    "type": "build",
+    "spec_id": "A8.1-kg-over-codebase",
+    "code": "A8.1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda M8: Brownfield modernization",
+    "type": "phase",
+    "spec_id": "M8-launch",
+    "code": "M8",
+    "category": "PHASE"
+   }
+  ],
+  "2027-08-10": [
+   {
+    "title": "\ud83d\udcd6 CodeConcise / Fishwick + Tech Radar Vol 33",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-11": [
+   {
+    "title": "\ud83d\udd28 A8.1: embeddings + RAG-over-graph + the 10-question set",
+    "type": "build",
+    "spec_id": "A8.1-kg-over-codebase",
+    "code": "A8.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-12": [
+   {
+    "title": "\ud83d\udcd6 Target codebase orientation docs",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-13": [
+   {
+    "title": "\ud83d\udd28 A8.1: reverse-engineering doc + honest time log",
+    "type": "build",
+    "spec_id": "A8.1-kg-over-codebase",
+    "code": "A8.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-16": [
+   {
+    "title": "\ud83d\udd28 A8.4: hand-read the hard codebase, 2h (no AI)",
+    "type": "build",
+    "spec_id": "A8.4-read-hard-codebase",
+    "code": "A8.4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-17": [
+   {
+    "title": "\ud83d\udcd6 The target's source (that IS the reading)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-18": [
+   {
+    "title": "\ud83d\udd28 A8.4: hand-read part 2 + comparison vs A8.1",
+    "type": "build",
+    "spec_id": "A8.4-read-hard-codebase",
+    "code": "A8.4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-19": [
+   {
+    "title": "\ud83d\udcd6 Postgres planner README (if that's the target)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-20": [
+   {
+    "title": "\ud83d\udd28 A8.4: comparison write-up (where AI misled)",
+    "type": "build",
+    "spec_id": "A8.4-read-hard-codebase",
+    "code": "A8.4",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-23": [
+   {
+    "title": "\ud83d\udd28 A8.2: re-implement from the spec (original hidden)",
+    "type": "build",
+    "spec_id": "A8.2-reverse-forward-loop",
+    "code": "A8.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-24": [
+   {
+    "title": "\ud83d\udcd6 Feathers Ch 12, characterization tests",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-25": [
+   {
+    "title": "\ud83d\udd28 A8.2: characterization tests against both",
+    "type": "build",
+    "spec_id": "A8.2-reverse-forward-loop",
+    "code": "A8.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-26": [
+   {
+    "title": "\ud83d\udcd6 Fowler, Refactoring Ch 1",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-27": [
+   {
+    "title": "\ud83d\udd28 A8.2: spec-gaps note",
+    "type": "build",
+    "spec_id": "A8.2-reverse-forward-loop",
+    "code": "A8.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-30": [
+   {
+    "title": "\ud83d\udd28 A8.3: pipeline on the Curator's June-2026 commit",
+    "type": "build",
+    "spec_id": "A8.3-self-applied-brownfield",
+    "code": "A8.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-08-31": [
+   {
+    "title": "\ud83d\udcd6 Rahul Ramesh, Research Review Rebuild",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-01": [
+   {
+    "title": "\ud83d\udd28 A8.3: past-self memo (3 decisions, verified claims)",
+    "type": "build",
+    "spec_id": "A8.3-self-applied-brownfield",
+    "code": "A8.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-02": [
+   {
+    "title": "\ud83d\udcd6 Your own old commits (primary source)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-03": [
+   {
+    "title": "\ud83c\udfc1 M8 capstone + B8.1 draft",
+    "type": "build",
+    "spec_id": "M8-launch",
+    "code": "M8",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 M8: the reverse-forward modernization loop, demonstrated",
+    "type": "milestone",
+    "spec_id": "M8-launch",
+    "code": "M8",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-09-06": [
+   {
+    "title": "\ud83d\udd28 XC2: dataflow diagram + STRIDE pass",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XC2: Security",
+    "type": "phase",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "PHASE"
+   }
+  ],
+  "2027-09-07": [
+   {
+    "title": "\ud83d\udcd6 Shostack Ch 1-3 + the STRIDE chapter",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-08": [
+   {
+    "title": "\ud83d\udd28 XC2: three fixes committed + one accepted risk",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-09": [
+   {
+    "title": "\ud83d\udcd6 OWASP LLM Top 10 (agent surface)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-10": [
+   {
+    "title": "\ud83d\udd28 XC2: prompt-injection demo vs your tool layer",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-13": [
+   {
+    "title": "\ud83d\udd28 XC2: PortSwigger paths (SQLi, XSS, auth)",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-14": [
+   {
+    "title": "\ud83d\udcd6 PortSwigger Academy materials (in-lab)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-15": [
+   {
+    "title": "\ud83d\udd28 XC2: PortSwigger (access control, SSRF) + Curator audit",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-16": [
+   {
+    "title": "\ud83d\udcd6 OWASP ASVS as the audit checklist",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-17": [
+   {
+    "title": "\ud83d\udd28 XC2: per-class verdicts with evidence",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-20": [
+   {
+    "title": "\ud83d\udd28 XC2: Keycloak + OAuth 2.1 PKCE flow on the MCP server",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-21": [
+   {
+    "title": "\ud83d\udcd6 Parecki, OAuth 2.0 Simplified + RFC 7636",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-22": [
+   {
+    "title": "\ud83d\udd28 XC2: scopes mapped to tiers + validation evidence",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-23": [
+   {
+    "title": "\ud83d\udcd6 SOPS + age docs",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-24": [
+   {
+    "title": "\ud83c\udfc1 XC2: secrets overhaul + live rotation, runbooked",
+    "type": "build",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XC2: threat-modeled, audited, OAuth'd, rotation executed",
+    "type": "milestone",
+    "spec_id": "XC2-security-module",
+    "code": "XC2",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-09-27": [
+   {
+    "title": "\ud83d\udd28 jlox: scanning + parsing (no AI)",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda M9: CS internals + staff engineering",
+    "type": "phase",
+    "spec_id": "M9-launch",
+    "code": "M9",
+    "category": "PHASE"
+   }
+  ],
+  "2027-09-28": [
+   {
+    "title": "\ud83d\udcd6 Crafting Interpreters Ch 4-5",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-29": [
+   {
+    "title": "\ud83d\udd28 jlox: parsing expressions complete",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-09-30": [
+   {
+    "title": "\ud83d\udcd6 Crafting Interpreters Ch 6",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-01": [
+   {
+    "title": "\ud83d\udd28 jlox: expressions evaluate",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-04": [
+   {
+    "title": "\ud83d\udd28 jlox: statements + state",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-05": [
+   {
+    "title": "\ud83d\udcd6 Crafting Interpreters Ch 8",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-06": [
+   {
+    "title": "\ud83d\udd28 jlox: control flow",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-07": [
+   {
+    "title": "\ud83d\udcd6 Crafting Interpreters Ch 9",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-08": [
+   {
+    "title": "\ud83d\udd28 jlox: functions",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-11": [
+   {
+    "title": "\ud83d\udd28 jlox: closures",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-12": [
+   {
+    "title": "\ud83d\udcd6 Crafting Interpreters Ch 10-11",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-13": [
+   {
+    "title": "\ud83d\udd28 jlox: resolving + binding",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-14": [
+   {
+    "title": "\ud83d\udcd6 (same, finish)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-15": [
+   {
+    "title": "\ud83d\udd28 jlox: classes",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-18": [
+   {
+    "title": "\ud83d\udd28 jlox: inheritance, jlox complete",
+    "type": "build",
+    "spec_id": "A9.1-jlox",
+    "code": "A9.1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-19": [
+   {
+    "title": "\ud83d\udcd6 Crafting Interpreters Ch 12-13",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-20": [
+   {
+    "title": "\ud83d\udd28 A9.2: clox taste, chunks + VM start",
+    "type": "build",
+    "spec_id": "A9.2-clox-extension",
+    "code": "A9.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-21": [
+   {
+    "title": "\ud83d\udcd6 Crafting Interpreters Ch 14-15",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-22": [
+   {
+    "title": "\ud83d\udd28 A9.2: clox continues (scoped taste, not the whole book)",
+    "type": "build",
+    "spec_id": "A9.2-clox-extension",
+    "code": "A9.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-25": [
+   {
+    "title": "\ud83d\udd28 A9.5: study-DSL grammar (written first) + parser",
+    "type": "build",
+    "spec_id": "A9.5-study-dsl",
+    "code": "A9.5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-26": [
+   {
+    "title": "\ud83d\udcd6 Your CI grammar chapters as reference",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-27": [
+   {
+    "title": "\ud83d\udd28 A9.5: compile to the tool layer (auth/audit for free)",
+    "type": "build",
+    "spec_id": "A9.5-study-dsl",
+    "code": "A9.5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-28": [
+   {
+    "title": "\ud83d\udcd6 A5.2's contract docs (the target layer)",
+    "type": "reading",
+    "spec_id": "A5.2-curator-v3-mcp",
+    "code": "A5.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-10-29": [
+   {
+    "title": "\ud83d\udd28 A9.5: end-to-end run + error-message quality",
+    "type": "build",
+    "spec_id": "A9.5-study-dsl",
+    "code": "A9.5",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-01": [
+   {
+    "title": "\u270d\ufe0f A9.3: strategy doc, diagnosis first (no AI)",
+    "type": "writing",
+    "spec_id": "A9.3-engineering-strategy-doc",
+    "code": "A9.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-02": [
+   {
+    "title": "\ud83d\udcd6 Larson, Staff Engineer (strategy chapters)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-03": [
+   {
+    "title": "\u270d\ufe0f A9.3: guiding policy + coherent actions draft",
+    "type": "writing",
+    "spec_id": "A9.3-engineering-strategy-doc",
+    "code": "A9.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-04": [
+   {
+    "title": "\ud83d\udcd6 Larson, An Elegant Puzzle (selected)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-05": [
+   {
+    "title": "\u270d\ufe0f A9.3: self-check rubric pass, send to 3 reviewers (1 external)",
+    "type": "writing",
+    "spec_id": "A9.3-engineering-strategy-doc",
+    "code": "A9.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-08": [
+   {
+    "title": "\ud83d\udd28 A9.6: scaffolding harnesses 1-2 (baselines timed first)",
+    "type": "build",
+    "spec_id": "A9.6-agent-scaffolding",
+    "code": "A9.6",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-09": [
+   {
+    "title": "\ud83d\udcd6 Reilly, The Staff Engineer's Path Ch 1-3",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-10": [
+   {
+    "title": "\ud83d\udd28 A9.6: harness 3 + usage logging begins",
+    "type": "build",
+    "spec_id": "A9.6-agent-scaffolding",
+    "code": "A9.6",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-11": [
+   {
+    "title": "\ud83d\udcd6 Reviewer feedback on A9.3 (primary source)",
+    "type": "reading",
+    "spec_id": "A9.3-engineering-strategy-doc",
+    "code": "A9.3",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-12": [
+   {
+    "title": "\ud83c\udfc1 A9.3 revision + changelog; schedule the five A9.4 mocks",
+    "type": "build",
+    "spec_id": "A9.3-engineering-strategy-doc",
+    "code": "A9.3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 M9: jlox + DSL + strategy doc reviewed externally (Stage 3 nears)",
+    "type": "milestone",
+    "spec_id": "M9-launch",
+    "code": "M9",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-11-15": [
+   {
+    "title": "\ud83d\udd28 XC1: pick the story + narrative spine (no AI)",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda XC1: The conference talk",
+    "type": "phase",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "PHASE"
+   }
+  ],
+  "2027-11-16": [
+   {
+    "title": "\ud83d\udcd6 Patrick Winston, How to Speak (MIT lecture)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-17": [
+   {
+    "title": "\u270d\ufe0f XC1: abstract + bio, pattern-matched to accepted talks",
+    "type": "writing",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-18": [
+   {
+    "title": "\ud83d\udcd6 speaking.io, end to end",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-19": [
+   {
+    "title": "\ud83d\udd28 XC1: four CFP submissions, logged",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-22": [
+   {
+    "title": "\ud83d\udd28 XC1: build the talk, first half",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-23": [
+   {
+    "title": "\ud83d\udcd6 Lara Hogan, Demystifying Public Speaking (prep chapters)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-24": [
+   {
+    "title": "\ud83d\udd28 XC1: build the talk, second half + cut list",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-25": [
+   {
+    "title": "\ud83d\udcd6 Accepted-abstract archives of target venues",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-26": [
+   {
+    "title": "\ud83c\udfa4 XC1: rehearsal 1, recorded and reviewed",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-29": [
+   {
+    "title": "\ud83c\udfa4 XC1: rehearsal 2 + the three changes it drove",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-11-30": [
+   {
+    "title": "\ud83d\udcd6 Hogan, feedback chapters",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-01": [
+   {
+    "title": "\ud83c\udfa4 XC1: rehearsal 3, human audience",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-02": [
+   {
+    "title": "\ud83d\udcd6 Venue logistics + Q&A prep",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-03": [
+   {
+    "title": "\ud83c\udfc1 XC1: delivery-ready; deliver at first venue that says yes",
+    "type": "build",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc1 XC1: the talk is delivered or delivery-scheduled",
+    "type": "milestone",
+    "spec_id": "XC1-conference-talk",
+    "code": "XC1",
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-12-06": [
+   {
+    "title": "\ud83d\udd28 M10: capstone scope + spec (spec-first, A4.3 discipline)",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcda M10: Capstone + program close",
+    "type": "phase",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "PHASE"
+   }
+  ],
+  "2027-12-07": [
+   {
+    "title": "\ud83d\udcd6 Capstone-driven reading",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-08": [
+   {
+    "title": "\ud83d\udd28 M10: build",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-09": [
+   {
+    "title": "\ud83d\udcd6 Capstone-driven reading",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-10": [
+   {
+    "title": "\ud83d\udd28 M10: build",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-13": [
+   {
+    "title": "\ud83d\udd28 M10: build",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-14": [
+   {
+    "title": "\ud83d\udcd6 Capstone-driven reading",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-15": [
+   {
+    "title": "\ud83d\udd28 M10: build",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-16": [
+   {
+    "title": "\ud83d\udcd6 Capstone-driven reading",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-17": [
+   {
+    "title": "\ud83d\udd28 M10: build + mid-point review vs spec",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-20": [
+   {
+    "title": "\ud83d\udd28 M10: build",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-21": [
+   {
+    "title": "\ud83d\udcd6 Capstone-driven reading",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-22": [
+   {
+    "title": "\ud83d\udd28 M10: build",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-23": [
+   {
+    "title": "\ud83d\udcd6 Capstone-driven reading",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-24": [
+   {
+    "title": "\ud83d\udd28 M10: polish + docs",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-27": [
+   {
+    "title": "\ud83d\udd28 M10: launch prep (README, demo, announcement post)",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-28": [
+   {
+    "title": "\ud83d\udcd6 Re-read the whole journal (retrospective input)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-29": [
+   {
+    "title": "\ud83d\udd28 M10: public launch",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-30": [
+   {
+    "title": "\u270d\ufe0f B10: launch post draft (no AI)",
+    "type": "writing",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-12-31": [
+   {
+    "title": "\u270d\ufe0f B10: publish",
+    "type": "writing",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2028-01-03": [
+   {
+    "title": "\u270d\ufe0f Program retrospective: 17 months, honestly assessed",
+    "type": "writing",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2028-01-04": [
+   {
+    "title": "\ud83d\udcd6 The stage gates (Section 10), graded",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2028-01-05": [
+   {
+    "title": "\ud83d\udd28 Site + portfolio final polish",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   }
+  ],
+  "2028-01-06": [
+   {
+    "title": "\ud83d\udcd6 (none, light)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2028-01-07": [
+   {
+    "title": "\ud83c\udfc1 PROGRAM COMPLETE",
+    "type": "build",
+    "spec_id": "M10-launch",
+    "code": "M10",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83c\udfc6 PROGRAM COMPLETE: foundation + 17 months, mid to staff-ready",
+    "type": "milestone",
+    "spec_id": null,
+    "code": null,
+    "category": "MILESTONE"
+   }
+  ],
+  "2027-01-18": [
+   {
+    "title": "\ud83d\udcda M4: Agentic Coding + Spec-Driven",
+    "type": "phase",
+    "spec_id": "M4-launch",
+    "code": "M4",
+    "category": "PHASE"
+   },
+   {
+    "title": "\ud83d\udd28 A3.2: reranker + latency/quality tradeoff measured",
+    "type": "build",
+    "spec_id": "A3.2-hybrid-retrieval",
+    "code": "A3.2",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcd6 OTel Python docs (spans, attributes)",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-01-14": [
+   {
+    "title": "WRITE B4.2: Agentic Coding #2",
+    "type": "writing",
+    "spec_id": "B4.2",
+    "code": "B4.2",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B5.1: MCP #1",
+    "type": "writing",
+    "spec_id": "B5.1",
+    "code": "B5.1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-15": [
+   {
+    "title": "\ud83d\udcd6 Manning, Intro to IR, scoring chapter",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udd28 A3.2: hybrid retrieval, BM25 + pgvector",
+    "type": "build",
+    "spec_id": "A3.2-hybrid-retrieval",
+    "code": "A3.2",
+    "category": "SESSION"
+   }
+  ],
+  "2027-01-19": [
+   {
+    "title": "\ud83d\udd28 A3.3: traces + 3 SLO dashboard panels",
+    "type": "build",
+    "spec_id": "A3.3-observability",
+    "code": "A3.3",
+    "category": "SESSION"
+   },
+   {
+    "title": "\ud83d\udcd6 Google SRE book, SLO chapter",
+    "type": "reading",
+    "spec_id": null,
+    "code": null,
+    "category": "SESSION"
+   }
+  ],
+  "2027-01-20": [
+   {
+    "title": "\ud83d\udd28 A3.3: alerts + synthetic monitor + induced-regression test",
+    "type": "build",
+    "spec_id": "A3.3-observability",
+    "code": "A3.3",
+    "category": "SESSION"
+   },
+   {
+    "title": "WRITE B5.2: MCP #2",
+    "type": "writing",
+    "spec_id": "B5.2",
+    "code": "B5.2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-21": [
+   {
+    "title": "WRITE B-SM4: Shameless Green (kata library)",
+    "type": "writing",
+    "spec_id": "B-SM4",
+    "code": "B-SM4",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B6.1: DevOps/IaC",
+    "type": "writing",
+    "spec_id": "B6.1",
+    "code": "B6.1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-22": [
+   {
+    "title": "WRITE B7.1: Distributed Systems #1",
+    "type": "writing",
+    "spec_id": "B7.1",
+    "code": "B7.1",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B7.2: Distributed Systems #2",
+    "type": "writing",
+    "spec_id": "B7.2",
+    "code": "B7.2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-25": [
+   {
+    "title": "WRITE B-KB4: Small Steps vs Large (kata library)",
+    "type": "writing",
+    "spec_id": "B-KB4",
+    "code": "B-KB4",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B8.1: Brownfield #1",
+    "type": "writing",
+    "spec_id": "B8.1",
+    "code": "B8.1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-26": [
+   {
+    "title": "WRITE B8.2: Brownfield #2",
+    "type": "writing",
+    "spec_id": "B8.2",
+    "code": "B8.2",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B9.1: Staff Eng #1",
+    "type": "writing",
+    "spec_id": "B9.1",
+    "code": "B9.1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-27": [
+   {
+    "title": "WRITE B-SM1: Single Responsibility, Reconsidered (DDD/Rails)",
+    "type": "writing",
+    "spec_id": "B-SM1",
+    "code": "B-SM1",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B9.2: Staff Eng #2",
+    "type": "writing",
+    "spec_id": "B9.2",
+    "code": "B9.2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-28": [
+   {
+    "title": "WRITE B10.1: Capstone #1",
+    "type": "writing",
+    "spec_id": "B10.1",
+    "code": "B10.1",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B10.2: Capstone #2",
+    "type": "writing",
+    "spec_id": "B10.2",
+    "code": "B10.2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-01-29": [
+   {
+    "title": "WRITE B-SM3: Inheritance vs Composition (DDD/Rails)",
+    "type": "writing",
+    "spec_id": "B-SM3",
+    "code": "B-SM3",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B-DC1: Deep Modules vs Small Objects: Ousterhout vs Metz (DDD)",
+    "type": "writing",
+    "spec_id": "B-DC1",
+    "code": "B-DC1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-08": [
+   {
+    "title": "WRITE B-DC5: Refactoring Under Green (test-protected refactor)",
+    "type": "writing",
+    "spec_id": "B-DC5",
+    "code": "B-DC5",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B-DC4: Complexity Is the Only Enemy (design module)",
+    "type": "writing",
+    "spec_id": "B-DC4",
+    "code": "B-DC4",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-09": [
+   {
+    "title": "WRITE B-DD5: Replication and the Lies We Tell (platform P1/P2)",
+    "type": "writing",
+    "spec_id": "B-DD5",
+    "code": "B-DD5",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B-DD1: Storage Engines, From the Inside (XD1 LSM engine)",
+    "type": "writing",
+    "spec_id": "B-DD1",
+    "code": "B-DD1",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-10": [
+   {
+    "title": "WRITE B-DD3: What Consistency Actually Means (Raft + XD3 TLA+)",
+    "type": "writing",
+    "spec_id": "B-DD3",
+    "code": "B-DD3",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B-DC2: Characterization Tests (M8 brownfield/Gilded Rose)",
+    "type": "writing",
+    "spec_id": "B-DC2",
+    "code": "B-DC2",
+    "category": "WRITING"
+   }
+  ],
+  "2027-02-11": [
+   {
+    "title": "WRITE B-DD4: The Log Is the Truth (XD5 queue-to-log)",
+    "type": "writing",
+    "spec_id": "B-DD4",
+    "code": "B-DD4",
+    "category": "WRITING"
+   },
+   {
+    "title": "WRITE B-KB5: Building xUnit Test-First (A9 internals)",
+    "type": "writing",
+    "spec_id": "B-KB5",
+    "code": "B-KB5",
+    "category": "WRITING"
+   }
+  ]
+ }
+}
